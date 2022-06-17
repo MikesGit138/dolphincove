@@ -1,11 +1,20 @@
-<div class="h-screen">
-    <div id="grid-ctn" class="grid grid-flow-col grid-rows-6 ml-9">
-        <div>
-        <% programs.forEach( (program)=> { %>
+<div class="h-screen grid grid-cols-3 mx-5 gap-4">
+    <% programs.forEach( (program)=> { %>
+
+    <div id="grid-ctn" class="mt-36">
+        <div class="bg-white rounded-sm shadow-xl p-6 text-center font-semibold">
         <div><%= program.prgm_nm %></div>
         <div><%= program.date_time %></div>
         <div><%= program.program_desc %></div>
-        <% }) %> 
+        <button class="bg-blue-400 text-white px-3 rounded-sm">More</button>
         </div>
     </div>
+    <% }) %> 
+
 </div>
+<style>
+    /* #grid-ctn{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } */
+</style>
