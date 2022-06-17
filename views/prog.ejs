@@ -1,3 +1,11 @@
-<div class="h-screen grid place-items-center">
-    <h1 class="">Program route works!</h1>
+<div class="h-screen">
+    <div id="grid-ctn" class="grid grid-flow-col grid-rows-6 ml-9">
+        <div>
+        <% programs.forEach( (program)=> { %>
+        <div><%= program.prgm_nm %></div>
+        <div><%= program.date_time %></div>
+        <div><%= program.program_desc %></div>
+        <% }) %> 
+        </div>
+    </div>
 </div>
